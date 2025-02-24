@@ -21,9 +21,16 @@
             :key="link.to" 
             :to="link.to" 
             class="relative text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 py-2"
+            :class="{ 
+              'text-blue-600 dark:text-blue-400': $route.path === link.to,
+              'hover:text-blue-700 dark:hover:text-blue-300': $route.path === link.to
+            }"
           >
             <span>{{ link.text }}</span>
-            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform scale-x-0 transition-transform duration-200 origin-left hover:scale-x-100"></span>
+            <span 
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform transition-transform duration-200 origin-left"
+              :class="$route.path === link.to ? 'scale-x-100' : 'scale-x-0 hover:scale-x-100'"
+            ></span>
           </NuxtLink>
         </nav>
 
@@ -88,6 +95,9 @@
             :key="link.to" 
             :to="link.to" 
             class="block px-4 py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
+            :class="{
+              'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400': $route.path === link.to
+            }"
             @click="isMenuOpen = false"
           >
             {{ link.text }}

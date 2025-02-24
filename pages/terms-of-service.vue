@@ -53,3 +53,19 @@
     </div>
   </NuxtLayout>
 </template>
+
+<script setup>
+useHead({
+  title: 'Terms of Service - Online Stopwatch & Timer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Read our terms of service for using the online stopwatch and timer application. Understand the usage terms, conditions, and guidelines for our time tracking tools.'
+    },
+    {
+      name: 'keywords',
+      content: 'terms of service, usage terms, conditions, service agreement, online timer terms'
+    }
+  ]
+})
+</script>

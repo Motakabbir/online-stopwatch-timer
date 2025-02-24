@@ -28,3 +28,19 @@
     </div>
   </NuxtLayout>
 </template>
+
+<script setup>
+useHead({
+  title: 'Privacy Policy - Online Stopwatch & Timer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Our privacy policy explains how we handle user data in our online stopwatch and timer application. Learn about our commitment to user privacy and data protection.'
+    },
+    {
+      name: 'keywords',
+      content: 'privacy policy, data protection, user privacy, cookie policy, online timer privacy'
+    }
+  ]
+})
+</script>

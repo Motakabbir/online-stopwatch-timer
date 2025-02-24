@@ -16,3 +16,19 @@
     <p>Simply choose between the stopwatch or timer function from the main page. The interface is intuitive and designed to be easy to use on any device.</p>
   </NuxtLayout>
 </template>
+
+<script setup>
+useHead({
+  title: 'About - Online Stopwatch & Timer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Learn about our free online stopwatch and timer application. Features include lap timing, customizable alerts, offline support, and dark mode for comfortable viewing.'
+    },
+    {
+      name: 'keywords',
+      content: 'about stopwatch timer, timer features, digital time tools, online time tracking, stopwatch application'
+    }
+  ]
+})
+</script>

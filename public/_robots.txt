@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Prevent crawling of error pages and private areas
+Disallow: /404
+Disallow: /api/
+Disallow: /server/
+
+# Allow all bots to read the sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay to be nice to servers
+Crawl-delay: 10
